@@ -111,7 +111,7 @@ export default function CartScreen() {
                 end={{ x: 1, y: 0 }}
                 style={styles.mainButsBox2}
               >
-                <Text style={styles.butText}>ОФОРМИТЬ ЗАКАЗ</Text>
+                <Text style={styles.butText}>ОФОРМИТЬ ЗАКАЗ!</Text>
                 <AntDesign name="right" size={15} color="white" />
               </LinearGradient>
             </TouchableOpacity>

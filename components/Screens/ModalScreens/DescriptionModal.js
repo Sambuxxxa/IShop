@@ -94,7 +94,7 @@ export default function DescriptionModal() {
           />
 
           <View style={{ margin: 10, marginBottom: 50 }}>
-            <Text style={{color: "#fff"}}>{DESCRIPTIONS[0].description}</Text>
+            <Text style={{color: "white"}}>{DESCRIPTIONS[0].description}</Text>
           </View>
         </ScrollView>
       </View>

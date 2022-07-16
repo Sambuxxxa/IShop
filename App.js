@@ -86,7 +86,7 @@ export default function App() {
               tabBarActiveTintColor: '#fff',
               headerShown: false,
               tabBarHideOnKeyboard: true,
-              tabBarStyle: {backgroundColor: '#1E1E1E'}
+              tabBarStyle: {backgroundColor: '#1e1e1e'}
             }}
           >
             <Tab.Screen

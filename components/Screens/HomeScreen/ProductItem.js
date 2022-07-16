@@ -52,7 +52,7 @@ export default function ProductItem({ item, addToCartList }) {
               addToCartList(item);
             }}
           >
-            <MaterialCommunityIcons name="basket-plus-outline" size={24} color="white" />
+            <MaterialCommunityIcons name="basket-plus-outline" size={24} color="#fff" />
           </TouchableOpacity>
 
         </View>

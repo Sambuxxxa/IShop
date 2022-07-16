@@ -22,7 +22,7 @@ export default function HomeScreen() {
         )}
         numColumns={2}
         columnWrapperStyle={styles.flat}
-        endFillColor={"#fff"}
+        endFillColor={'white'}
       />
 
 

@@ -37,7 +37,7 @@ export default function Header() {
 
 const styles = StyleSheet.create({
     mainBox: {
-        backgroundColor: "#1E1E1E",
+        backgroundColor: "#1e1e1e",
         width: '100%',
         justifyContent: 'space-around',
         flexDirection: 'row',

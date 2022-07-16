@@ -6,7 +6,7 @@ export default function CartItem(el) {
 
   return (
     <LinearGradient
-      colors={['#292929', '#1E1E1E']}
+      colors={['#292929', '#1e1e1e']}
       start={{x: 0, y: 0}}
       end={{x: 1, y: 0}}
       style={styles.mainBox}
