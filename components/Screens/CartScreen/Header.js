@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   title: {
-    // fontFamily: 'mt-bold',
     fontSize: 20,
     marginLeft: 10,
     marginTop: 10,
