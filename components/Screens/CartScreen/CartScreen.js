@@ -1,4 +1,4 @@
-import { FlatList, Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { FlatList, Image, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React, { useContext, useState } from "react";
 import { ProductsContext } from "../../../App";
 import Header from "./Header";
@@ -6,6 +6,7 @@ import CartItem from "./CartItem";
 import uuid from "react-native-uuid";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+import LinearGradient from "react-native-linear-gradient";
 
 
 export default function CartScreen() {
@@ -24,6 +25,9 @@ export default function CartScreen() {
           <Text style={styles.text}>Добавьте хотя бы один гаджет,</Text>
           <Text style={styles.text}>что бы оформить заказ.</Text>
         </View>
+        <StatusBar
+          backgroundColor={'#1E1E1E'}
+        />
       </SafeAreaView>
     );
   } else {
@@ -45,10 +49,20 @@ export default function CartScreen() {
                 data.setCartList([]);
                 setIsFinished(false);
               }}>
-              <AntDesign name="left" size={15} color="white" />
-              <Text style={styles.butText}>КУПИТЬ ЕЩЁ</Text>
+              <LinearGradient
+                colors={["#2a7c4e", "#13763D", "#076530"]}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+                style={styles.mainButsBox2}
+              >
+                <AntDesign name="left" size={15} color="white" />
+                <Text style={styles.butText}>КУПИТЬ ЕЩЁ</Text>
+              </LinearGradient>
             </TouchableOpacity>
           </View>
+          <StatusBar
+            backgroundColor={'#1E1E1E'}
+          />
         </SafeAreaView>
         :
         <SafeAreaView style={styles.container}>
@@ -73,22 +87,39 @@ export default function CartScreen() {
                 data.setFullPrice(0);
               }}
             >
-              <Text style={styles.butText}>ОЧИСТИТЬ КОРЗИНУ</Text>
-              <MaterialIcons name="delete-outline" size={20} color="white" />
+              <LinearGradient
+                colors={["#2a7c4e", "#13763D", "#076530"]}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+                style={styles.mainButsBox2}
+              >
+                <Text style={styles.butText}>ОЧИСТИТЬ КОРЗИНУ</Text>
+                <MaterialIcons name="delete-outline" size={20} color="white" />
+              </LinearGradient>
             </TouchableOpacity>
 
             <TouchableOpacity
-              style={styles.mainButsBox}
+              style={styles.mainButsBox2}
               onPress={() => {
                 setIsFinished(true);
                 data.setFullPrice(0);
               }}
             >
-              <Text style={styles.butText}>ОФОРМИТЬ ЗАКАЗ</Text>
-              <AntDesign name="right" size={15} color="white" />
+              <LinearGradient
+                colors={["#076530", "#13763D", "#2a7c4e"]}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+                style={styles.mainButsBox2}
+              >
+                <Text style={styles.butText}>ОФОРМИТЬ ЗАКАЗ</Text>
+                <AntDesign name="right" size={15} color="white" />
+              </LinearGradient>
             </TouchableOpacity>
 
           </View>
+          <StatusBar
+            backgroundColor={'#1E1E1E'}
+          />
 
         </SafeAreaView>
     );
@@ -98,7 +129,7 @@ export default function CartScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
+    backgroundColor: "#1E1E1E",
   },
   box: {
     flex: 1,
@@ -112,13 +143,16 @@ const styles = StyleSheet.create({
   title: {
     // fontFamily: 'mt-bold',
     fontSize: 20,
+    color: "#fff",
   },
   text: {
     // fontFamily: 'mt-light',
+    color: "#fff",
   },
   text2: {
     // fontFamily: 'mt-light',
     margin: 10,
+    color: "#fff",
   },
   butsBox: {
     flexDirection: "row",
@@ -126,7 +160,16 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   mainButsBox: {
-    backgroundColor: "#9B9B9B",
+    backgroundColor: "#a6a6a6",
+    width: 170,
+    height: 40,
+    justifyContent: "space-evenly",
+    alignItems: "center",
+    flexDirection: "row",
+    borderRadius: 15,
+  },
+  mainButsBox2: {
+    backgroundColor: "#0E7037",
     width: 170,
     height: 40,
     justifyContent: "space-evenly",

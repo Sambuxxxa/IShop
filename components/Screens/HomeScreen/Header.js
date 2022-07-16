@@ -13,17 +13,14 @@ export default function Header() {
     return (
         <View style={styles.mainBox}>
 
-            <View style={styles.icon}>
-                <AntDesign name="apple-o" size={30} color="black"/>
-            </View>
-
             <View style={styles.box}>
                 <View style={styles.icon}>
-                    <EvilIcons name="search" size={33} color="#9B9B9B"/>
+                    <EvilIcons name="search" size={33} color="white"/>
                 </View>
                 <TextInput
                     style={styles.inp}
                     placeholder={'Искать...'}
+                    placeholderTextColor={'#a6a6a6'}
                     onChangeText={(text) => {
                         data.setSearchedItems(PRODUCTS.filter(item => {
                                 return (
@@ -40,7 +37,7 @@ export default function Header() {
 
 const styles = StyleSheet.create({
     mainBox: {
-        backgroundColor: '#fff',
+        backgroundColor: "#1E1E1E",
         width: '100%',
         justifyContent: 'space-around',
         flexDirection: 'row',
@@ -52,17 +49,17 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         // width: '89%',
         width: '90%',
-        backgroundColor: '#fff',
+        backgroundColor: '#1E1E1E',
         margin: 5,
         borderRadius: 20,
         borderWidth: 0.1,
-        borderColor: '#9B9B9B'
+        borderColor: '#a6a6a6'
     },
     inp: {
         width: '97%',
         fontSize: 17,
         marginLeft: 5,
-        color: '#9B9B9B'
+        color: '#fff'
     },
     icon: {
         paddingTop: 8,

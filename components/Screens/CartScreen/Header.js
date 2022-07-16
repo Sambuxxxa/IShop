@@ -11,7 +11,7 @@ export default function Header() {
 
 const styles = StyleSheet.create({
   mainBox: {
-    backgroundColor: '#fff',
+    backgroundColor: '#1E1E1E',
     width: '100%',
     justifyContent: 'flex-start',
     flexDirection: 'row',
@@ -21,5 +21,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginLeft: 10,
     marginTop: 10,
+    color: '#fff'
   }
 })

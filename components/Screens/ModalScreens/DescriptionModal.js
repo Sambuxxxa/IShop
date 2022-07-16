@@ -5,6 +5,7 @@ import AntDesign from "react-native-vector-icons/AntDesign";
 import Octicons from "react-native-vector-icons/Octicons";
 import Feather from "react-native-vector-icons/Feather";
 import { DESCRIPTIONS } from "../../../data/DESCRIPTIONS";
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 
 export default function DescriptionModal() {
@@ -16,13 +17,13 @@ export default function DescriptionModal() {
       visible={data.isVisibleDescriptionModal}
       style={styles.mainBox}
       animationType={"slide"}>
-      <View>
+      <View style={{backgroundColor: '#1E1E1E'}}>
         <View
           style={{ flexDirection: "row", justifyContent: "space-evenly" }}>
           <TouchableOpacity
             onPress={() => data.setIsVisibleDescriptionModal(prevState => !prevState)}
-            style={{ margin: 10 }}>
-            <AntDesign name="left" size={24} color="black" />
+            style={{ marginLeft: 15, marginTop: 8, }}>
+            <Ionicons name="return-down-back" size={26} color="white" />
           </TouchableOpacity>
           <View style={styles.titleBox}>
             <Text style={styles.title}>{data.selectedItem[0].title}</Text>
@@ -38,7 +39,7 @@ export default function DescriptionModal() {
             style={{
               width: "95%",
               height: 1,
-              backgroundColor: "#000",
+              backgroundColor: "#a6a6a6",
               alignSelf: "center",
             }}
           />
@@ -52,7 +53,7 @@ export default function DescriptionModal() {
               marginTop: 5,
             }}>
             <View style={{ margin: 4, marginLeft: 10 }}>
-              <Octicons name="location" size={30} color="black" />
+              <Octicons name="location" size={30} color="white" />
             </View>
 
             <View>
@@ -70,14 +71,14 @@ export default function DescriptionModal() {
               marginBottom: 5,
             }}>
             <View style={{ margin: 2, marginLeft: 10 }}>
-              <Feather name="package" size={30} color="black" />
+              <Feather name="package" size={30} color="white" />
             </View>
 
             <View>
               <Text style={[styles.title, { textAlign: "left" }]}>
                 Доставка:{" "}
               </Text>
-              <Text style={{ color: "#9B9B9B" }}>
+              <Text style={{ color: "#a6a6a6" }}>
                 Новая почта, Meest, Укрпочта
               </Text>
             </View>
@@ -87,13 +88,13 @@ export default function DescriptionModal() {
             style={{
               width: "95%",
               height: 1,
-              backgroundColor: "#000",
+              backgroundColor: "#a6a6a6",
               alignSelf: "center",
             }}
           />
 
           <View style={{ margin: 10, marginBottom: 50 }}>
-            <Text>{DESCRIPTIONS[0].description}</Text>
+            <Text style={{color: "#fff"}}>{DESCRIPTIONS[0].description}</Text>
           </View>
         </ScrollView>
       </View>
@@ -103,8 +104,9 @@ export default function DescriptionModal() {
 
 const styles = StyleSheet.create({
   img: {
-    width: 400,
-    height: 400,
+    width: 350,
+    height: 350,
+    alignSelf: 'center'
   },
   titleBox: {
     width: "95%",
@@ -114,11 +116,14 @@ const styles = StyleSheet.create({
     // fontFamily: 'i-semiBold',
     fontSize: 17,
     textAlign: "center",
+    color: '#fff'
+
   },
   price: {
     // fontFamily: 'mt-light',
     fontSize: 20,
     margin: 10,
+    color: '#fff'
   },
 });
 
