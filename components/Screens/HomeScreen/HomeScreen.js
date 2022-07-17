@@ -19,7 +19,8 @@ export default function HomeScreen() {
         )}
         numColumns={2}
         columnWrapperStyle={styles.flat}
-        endFillColor={'white'}/>
+        endFillColor={'white'}
+        style={{backgroundColor: '#1e1e1e'}}/>
       {/*<View style={styles.listProducts}></View>*/}
       <SignInModal/>
       <LogInModal/>
