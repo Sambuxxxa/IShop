@@ -2,9 +2,7 @@ import React, {useContext} from "react";
 import {FlatList, SafeAreaView, StatusBar, StyleSheet} from "react-native";
 import Header from "./Header";
 import ProductItem from "./ProductItem";
-import {ProductsContext} from "../../../App";
-import SignInModal from "../ModalScreens/SignInModal";
-import LogInModal from "../ModalScreens/LogInModal";
+import {ProductsContext} from "../../../../App";
 
 export default function HomeScreen() {
   const data = useContext(ProductsContext);
@@ -21,9 +19,6 @@ export default function HomeScreen() {
         columnWrapperStyle={styles.flat}
         endFillColor={'white'}
         style={{backgroundColor: '#1e1e1e'}}/>
-      {/*<View style={styles.listProducts}></View>*/}
-      <SignInModal/>
-      <LogInModal/>
       <StatusBar backgroundColor={'#1E1E1E'}/>
     </SafeAreaView>
   );

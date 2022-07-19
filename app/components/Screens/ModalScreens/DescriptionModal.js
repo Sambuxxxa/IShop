@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import {Image, Modal, ScrollView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
-import {ProductsContext} from "../../../App";
+import {ProductsContext} from "../../../../App";
 import Octicons from "react-native-vector-icons/Octicons";
 import Feather from "react-native-vector-icons/Feather";
 import {DESCRIPTIONS} from "../../../data/DESCRIPTIONS";

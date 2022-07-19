@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import {Image, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import LinearGradient from "react-native-linear-gradient";
-import {ProductsContext} from "../../../App";
+import {ProductsContext} from "../../../../App";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import {PRODUCTS} from "../../../data/PRODUCTS";
 

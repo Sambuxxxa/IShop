@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import {View, StyleSheet, TextInput} from "react-native";
-import {ProductsContext} from "../../../App";
+import {ProductsContext} from "../../../../App";
 import EvilIcons from "react-native-vector-icons/EvilIcons";
 import {PRODUCTS} from "../../../data/PRODUCTS";
 

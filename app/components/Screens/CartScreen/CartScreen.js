@@ -1,6 +1,6 @@
 import {FlatList, Image, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import React, {useContext, useState} from "react";
-import {ProductsContext} from "../../../App";
+import {ProductsContext} from "../../../../App";
 import Header from "./Header";
 import CartItem from "./CartItem";
 import uuid from "react-native-uuid";
@@ -22,7 +22,7 @@ export default function CartScreen() {
       <SafeAreaView style={styles.container}>
         <Header/>
         <View style={styles.box}>
-          <Image source={require("../../../assets/image2.png")} style={styles.img}/>
+          <Image source={require("../../../assets/images/image2.png")} style={styles.img}/>
           <Text style={styles.title}>Корзина пустая</Text>
           <Text style={styles.text}>Добавьте хотя бы один гаджет,</Text>
           <Text style={styles.text}>что бы оформить заказ.</Text>
@@ -36,7 +36,7 @@ export default function CartScreen() {
           <Header/>
 
           <View style={styles.box}>
-            <Image source={require("../../../assets/image3.png")} style={styles.img}/>
+            <Image source={require("../../../assets/images/image3.png")} style={styles.img}/>
             <Text style={styles.title}>Заказ оформлен!</Text>
             <Text style={styles.text}>Ваш заказ #{uuid.v4()}</Text>
             <Text style={styles.text}>скоро будет передан курьерской доставке.</Text>
