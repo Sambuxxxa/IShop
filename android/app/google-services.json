@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "827283862399",
+    "project_id": "ishop2-7fd93",
+    "storage_bucket": "ishop2-7fd93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827283862399:android:d88e3388f9157cdf8fe04a",
+        "android_client_info": {
+          "package_name": "com.ishop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827283862399-lf140et0johhf7bnvu5ee0o92q91s9t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs1dwRQ63zGOpTO3vDu7bheSm1XpIihto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827283862399-lf140et0johhf7bnvu5ee0o92q91s9t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

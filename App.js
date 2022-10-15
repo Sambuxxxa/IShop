@@ -19,7 +19,6 @@ export const ProductsContext = React.createContext();
 export default function App() {
 
   const [searchResult, setSearchResult] = useState('');
-
   const [searchedItems, setSearchedItems] = useState(PRODUCTS);
 
   const [fullPrice, setFullPrice] = useState(0);
